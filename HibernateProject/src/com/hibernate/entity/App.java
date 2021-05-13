@@ -35,7 +35,8 @@ public class App {
 			//session.delete(user);				 // Delete user
 			
 			//LISTING THE DATA
-			List<Users> users = session.createQuery("from users").getResultList();
+			String uname="arpan";
+			List<Users> users = session.createQuery("from users where username='"+uname+"'").getResultList();
 			
 			for(Users temp : users) {
 				
