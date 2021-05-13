@@ -30,8 +30,11 @@ public class App {
 			
 			// 3. Perform Operation
 			
-			//session.save(user);				--- Insert Data
+			//session.save(user);				 // Insert Data
 			user = session.get(Users.class, 2);  // For retrieve
+			
+			//user.setUsername("arpan@123");     // Update user
+			//session.delete(user);				 // Delete user
 			
 			// 4. Commit the Transaction
 			session.getTransaction().commit();
